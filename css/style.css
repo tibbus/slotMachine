@@ -1,0 +1,81 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.slot
+{
+	/*-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;*/
+	position: absolute;
+	width : 100px;
+	height: 100px;
+	top : 0px;
+	left: 0px;
+	background-image : url('../assets/sprite.jpg');
+	background-position: -100px -100px;
+	padding : 1px 0 1px 0;
+}
+
+machineContainer
+{
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 500px;
+	left: 50%;
+	top: 35%;
+	-webkit-perspective: 2000px;
+	perspective: 2000px;
+	-ms-perspective: 2000px;
+
+	-webkit-perspective-origin: 0% 0%;
+	-ms-perspective-origin: 0% 0%;
+	perspective-origin: 75% 0%;
+
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.onFront
+{
+	z-index : 2;
+}
+
+button
+{
+	position: absolute;
+	bottom: 150px;
+	width: 200px;
+	height: 80px;
+	font-size : 25px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+div.inputWrap
+{
+	font-size: 15px;
+	bottom : 80px;
+	position : absolute;
+	width : 300px;
+	height: 80px;
+}
+
+.boxes
+{
+	float : left;
+	margin-top: 30px;
+}
+.center
+{
+	left : 50%;
+	-webkit-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
